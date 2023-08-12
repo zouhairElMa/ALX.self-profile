@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/faa06f611c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="Profile-card">
+            <div class="heart" onclick="favorite()">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="profile-card-img" onclick="activeCard()">
+                <img src="./avatar.jpg" alt="">
+            </div>
+            <div class="profile-card-info">
+                <div class="profile-card-name">Zouhair El Mattad</div>
+                <div class="profile-card-job-name">Data-Science, Student</div>
+                <div class="profile-card-localisation">
+                    <div class="profile-card-localisation-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="profile-card-localisation-name">Sale, Morocco</div>
+                </div>
+                <div class="profile-card-stt">
+                    <div class="profile-card-stt-item">
+                        <div id="followers" class="profile-card-stt-cnt" onclick="followersClick()">1890</div>
+                        <div class="profile-card-stt-title">Followers</div>
+                    </div>
+                    <div class="profile-card-stt-item">
+                        <div id="Jobs" class="profile-card-stt-cnt"onclick="JobsClick()">268</div>
+                        <div class="profile-card-stt-title">Jobs</div>
+                    </div>
+                    <div class="profile-card-stt-item">
+                        <div id="Reviews" class="profile-card-stt-cnt"onclick="ReviewsClick()">189</div>
+                        <div class="profile-card-stt-title">Reviews</div>
+                    </div>
+                </div>
+                <div class="profile-card-buttons">
+                    <div class="profile-card-button">
+                        <span>More Info</span>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/achraf-saidi-1aa45a1b3/">
+                              <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/zouhairElMa">
+                              <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fa-brands fa-kaggle"></i>
+                            </a>
+                            <a href="https://deepanshuworld.my.canva.site/alxselfprofile">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                              </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
